@@ -1,4 +1,6 @@
 import React from "react";
+import AcceptTask from "./AcceptTask";
+import NewTask from "./NewTask";
 
 const TaskList = ({data}) => {
   return (
@@ -6,7 +8,9 @@ const TaskList = ({data}) => {
       id="tasklist"
       className="h-[55%] overflow-x-auto flex items-center justify-start gap-5 flex-nowrap w-full py-5  mt-10"
     >
-      <div className="flex-shrink-0 p-5 h-full w-[300px] bg-purple-400 rounded-xl">
+      <NewTask />
+      <AcceptTask />
+      {/* <div className="flex-shrink-0 p-5 h-full w-[300px] bg-purple-400 rounded-xl">
         <div className="flex justify-between items-center">
           <h3 className="bg-red-600 px-3 py-1 text-sm rounded">High</h3>
           <h4 className="text-sm">20 Feb 2024</h4>
@@ -18,20 +22,8 @@ const TaskList = ({data}) => {
             laborum non ea aperiam pariatur itaque.
           </p>
         </div>
-      </div>
-      <div className="flex-shrink-0 p-5 h-full w-[300px] bg-blue-400 rounded-xl">
-        <div className="flex justify-between items-center">
-          <h3 className="bg-red-600 px-3 py-1 text-sm rounded">High</h3>
-          <h4 className="text-sm">20 Feb 2024</h4>
-        </div>
-        <div>
-          <h2 className="mt-5 text-2xl font-semibold">Make a Youtube Video</h2>
-          <p className="text-sm mt-2">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque
-            laborum non ea aperiam pariatur itaque.
-          </p>
-        </div>
-      </div>
+      </div> */}
+     
       <div className="flex-shrink-0 p-5 h-full w-[300px] bg-green-400 rounded-xl">
         <div className="flex justify-between items-center">
           <h3 className="bg-red-600 px-3 py-1 text-sm rounded">High</h3>

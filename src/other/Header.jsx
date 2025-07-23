@@ -1,7 +1,6 @@
 import React from "react";
 
-const Header = ({data}) => {
-  console.log(data)
+const Header = ({data = { firstName: 'User' }}) => {
   return (
     <div className="flex items-end justify-between">
       <h1 className="text-2xl font-medium text-white">
