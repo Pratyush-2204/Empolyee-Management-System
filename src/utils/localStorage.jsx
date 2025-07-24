@@ -210,6 +210,7 @@ const admin = [{
 }];
 
 export const setLocalStorage = ()=>{
+  localStorage.clear(); // Clear all existing data first
   localStorage.setItem('employees',JSON.stringify(employees))
   localStorage.setItem('admin',JSON.stringify(admin))
 }
